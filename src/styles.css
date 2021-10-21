@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+.col1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+li a,
+a {
+  color: gray;
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 2vmin;
+  margin-left: 2vmin;
+  font-size: 3vmin;
+}
+
+.inner-text {
+  color: gray;
+}
+.red-line {
+  color: red;
+  text-decoration: line-through;
+}
+.cart-btn {
+  background-color: rgb(241, 53, 53);
+  width: 170px;
+  height: 50px;
+  border-radius: 20px;
+  border: solid white 2px;
+  font-size: 2vmin;
+  margin: 20%;
+  color: white;
+}
+
+.nav-haeading {
+  font-size: 5vmin;
+}
+/* Left Nav end */
+.col2-row1 {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 60%;
+  padding: 6% 10% 0;
+  font-size: 4vmin;
+  font-weight: 900;
+}
+/* Page Heading End */
+.col2-row2 {
+  float: right;
+  width: 80%;
+  padding: 10% 0%;
+}
+
+.food-pic {
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  margin: 0 3%;
+}
+.fpic {
+  border-radius: 10%;
+  box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+.food-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding: 15%;
+}
+.ftext {
+  font-weight: 900;
+  font-size: 4vmin;
+  padding: 10%;
+}
+.toggle-bar {
+  display: none;
+}
+.col3 {
+  padding: 8%;
+  line-height: 1.5;
+  line-height: 2;
+}
+hr {
+  position: relative;
+  margin-left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-left {
+    display: none;
+    width: 0;
+  }
+
+  .col1 {
+    margin: 1%;
+    width: 100%;
+  }
+  .toggle-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-tog {
+    font-size: 50px;
+    color: #000;
+  }
+  .fas {
+    margin-top: 5%;
+    color: red;
+  }
+
+  .col2-row1 {
+    float: center;
+    width: 100%;
+    padding: 5%;
+    font-size: 4vmin;
+    font-weight: 900;
+  }
+  .col2-row2 {
+    float: center;
+    width: 100%;
+    padding: 4%;
+  }
+  .col2-row2 {
+    float: right;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .food-pic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fpic:nth-child(5) {
+    display: none;
+  }
+
+  .col3 {
+    padding-left: 10%;
+    display: block;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 2;
+  }
+  hr {
+    width: 100px;
+    height: 5px;
+    background-color: red;
+  }
+}
